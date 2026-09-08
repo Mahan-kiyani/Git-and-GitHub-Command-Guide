@@ -20,26 +20,26 @@ The commands are organized step by step to help you understand Git and use it co
     git add <file_name>    \# Add a specific file to the staging area
     git add .              \# Add all changes to the staging area
 
-4-Git removed stage
-    
-    [path] git rm --cached 'file name' \# Stop tracking a file in Git without deleting it from the local directory
-    
-5-Git send to repo (The git push command is fully explained in tip 26)
-    
-    [path] git commit -m 'your_message'
-    git push origin main
-    
-6-Git Log
+4- Git Remove from Stage
 
-    git log
-    git log --oneline
-    git log --oneline --all \# show all commits 
-    git log --stat
-    git log --graph
-    git log --graph --oneline
-    git log --after='year-month-day'
-    git log --before='year-month-day'
-    git log --author='UserName'
+    git rm --cached <file_name>    \# Stop tracking a file in Git without deleting it from the local directory
+    
+5- Git Send to Repository (The git push command is fully explained in tip 26)
+
+    git commit -m "<your_message>"    \# Create a new commit with a message
+    git push origin main              \# Push local commits to the main branch on the remote repository    
+
+6- Git Log
+
+    git log                              \# Show the commit history
+    git log --oneline                    \# Show the commit history in a compact one-line format
+    git log --oneline --all              \# Show all commits from all branches
+    git log --stat                       \# Show the commit history with the files changed in each commit
+    git log --graph                      \# Show the commit history as a graph
+    git log --graph --oneline            \# Show the commit history as a compact graph
+    git log --after='<year-month-day>'   \# Show commits made after a specific date
+    git log --before='<year-month-day>'  \# Show commits made before a specific date
+    git log --author='<UserName>'       \# Show commits made by a specific author
     
 7-Git Add and Commit both
 
