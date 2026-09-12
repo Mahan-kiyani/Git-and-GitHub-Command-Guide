@@ -41,22 +41,22 @@ The commands are organized step by step to help you understand Git and use it co
     git log --before='<year-month-day>'  \# Show commits made before a specific date
     git log --author='<UserName>'       \# Show commits made by a specific author
     
-7-Git Add and Commit both
+7- Git Add and Commit Both
 
-    git commit -am "your_message" \# Stage and commit all modified and deleted tracked files
+    git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
 
-8- Git Show 
+8- Git Show
 
-    git show \# last changes in project
-    git show 'commit_ID' \# Display detailed information about a specific commit, including its changes, author, and message
+    git show                           \# Show detailed information about the latest commit, including its changes
+    git show <commit_ID>               \# Display detailed information about a specific commit, including its changes, author, and message
     
-9-Git shortcut create
+9- Git Shortcut Create
 
-    git config --local alias.lgo "log --oneline"
-    git config --global alias.am "commit -am"
-    
-    git config --local --get-regexp ^alias\. \#see alias was created in local
-    git config --global --get-regexp ^alias\. \#see alias was created in global
+    git config --local alias.lgo "log --oneline"             \# Create a local alias for a Git command
+    git config --global alias.am "commit -am"                \# Create a global alias for a Git command
+
+    git config --local --get-regexp ^alias\.                 \# Show aliases configured locally
+    git config --global --get-regexp ^alias\.                \# Show aliases configured globally
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 

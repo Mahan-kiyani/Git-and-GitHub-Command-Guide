@@ -1,51 +1,62 @@
-# Git Learn Commands 
+# Git Learn Commands
 
-1- git init
+A practical guide to the most important Git commands, with simple explanations and real-world examples.
+The commands are organized step by step to help you understand Git and use it confidently in your projects.
 
-2- git status
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-3- Git add to stage
+1- Git Init
+
+    git init	\# Initialize a new Git repository in the current directory
+
+
+2- Git Status
+
+    git status	\# Show the current state of the working directory and staging area
+
+
+3- Git Add to Stage
+
+    git add <file_name>    \# Add a specific file to the staging area
+    git add .              \# Add all changes to the staging area
+
+4- Git Remove from Stage
+
+    git rm --cached <file_name>    \# Stop tracking a file in Git without deleting it from the local directory
     
-    [path] git add 'file name' \#<selected file to stage>
-    [path] git add . \#<all file to stage>
+5- Git Send to Repository (The git push command is fully explained in tip 26)
 
-4-Git removed stage
-    
-    [path] git rm --cached 'file name' \# Stop tracking a file in Git without deleting it from the local directory
-    
-5-Git send to repo (The git push command is fully explained in tip 26)
-    
-    [path] git commit -m 'your_message'
-    git push origin main
-    
-6-Git Log
+    git commit -m "<your_message>"    \# Create a new commit with a message
+    git push origin main              \# Push local commits to the main branch on the remote repository    
 
-    git log
-    git log --oneline
-    git log --oneline --all \# show all commits 
-    git log --stat
-    git log --graph
-    git log --graph --oneline
-    git log --after='year-month-day'
-    git log --before='year-month-day'
-    git log --authorr='UserName'
+6- Git Log
+
+    git log                              \# Show the commit history
+    git log --oneline                    \# Show the commit history in a compact one-line format
+    git log --oneline --all              \# Show all commits from all branches
+    git log --stat                       \# Show the commit history with the files changed in each commit
+    git log --graph                      \# Show the commit history as a graph
+    git log --graph --oneline            \# Show the commit history as a compact graph
+    git log --after='<year-month-day>'   \# Show commits made after a specific date
+    git log --before='<year-month-day>'  \# Show commits made before a specific date
+    git log --author='<UserName>'       \# Show commits made by a specific author
     
-7-Git Add and Commit both
+7- Git Add and Commit Both
 
-    git commit -am "file name"
+    git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
 
-8- Git Show 
+8- Git Show
 
-    git show \# last changes in project
-    git show 'commit_ID' \# Display detailed information about a specific commit, including its changes, author, and message
+    git show                           \# Show detailed information about the latest commit, including its changes
+    git show <commit_ID>               \# Display detailed information about a specific commit, including its changes, author, and message
     
-9-Git shortcut create
+9- Git Shortcut Create
 
-    git config --local alias.lgo "log --oneline"
-    git config --global alias.am "commit -am"
-    
-    git config --local --get-regexp ^alias\. \#see alias was created in local
-    git config --global --get-regexp ^alias\. \#see alias was created in global
+    git config --local alias.lgo "log --oneline"             \# Create a local alias for a Git command
+    git config --global alias.am "commit -am"                \# Create a global alias for a Git command
+
+    git config --local --get-regexp ^alias\.                 \# Show aliases configured locally
+    git config --global --get-regexp ^alias\.                \# Show aliases configured globally
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -99,7 +110,7 @@
 
     git diff \# comparison work directory with staging area
     git diff --staged \# comparison stage area with last commits
-    git diff <HEAD or head> \# comparison work directory with last commits
+    git diff <HEAD> \# Compare the working directory with the latest commit
     git diff <commit hash code>..<commit hash code> \# comparison one commit to another with hash code (first git log)
     git diff <commit hash code>..<commit hash code> <file name> \# comparison one file in commit to another with hash code (first git log)
     git diff <branch name>..<branch name> \# comparison two branches
