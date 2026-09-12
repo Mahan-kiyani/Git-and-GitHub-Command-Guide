@@ -41,43 +41,42 @@ The commands are organized step by step to help you understand Git and use it co
     git log --before='<year-month-day>'  \# Show commits made before a specific date
     git log --author='<UserName>'       \# Show commits made by a specific author
     
-7-Git Add and Commit both
+7- Git Add and Commit Both
 
-    git commit -am "your_message" \# Stage and commit all modified and deleted tracked files
+    git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
 
-8- Git Show 
+8- Git Show
 
-    git show \# last changes in project
-    git show 'commit_ID' \# Display detailed information about a specific commit, including its changes, author, and message
+    git show                           \# Show detailed information about the latest commit, including its changes
+    git show <commit_ID>               \# Display detailed information about a specific commit, including its changes, author, and message
     
-9-Git shortcut create
+9- Git Shortcut Create
 
-    git config --local alias.lgo "log --oneline"
-    git config --global alias.am "commit -am"
-    
-    git config --local --get-regexp ^alias\. \#see alias was created in local
-    git config --global --get-regexp ^alias\. \#see alias was created in global
+    git config --local alias.<new command name> "current command"             \# Create a local alias for a Git command
+    git config --global alias.<new command name> "current command"                \# Create a global alias for a Git command
+
+    git config --local --get-regexp ^alias\.                 \# Show aliases configured locally
+    git config --global --get-regexp ^alias\.                \# Show aliases configured globally
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-10-Git Branch
+10- Git Branch Management
 
-    git branch \# show branchs on your project
-    git branch <branch_name>  \# create a branch
-    git branch -r \# List all remote branches available in the connected repositories(use for git fetch and ...)
-    git switch <branch_name> \# go to the branch you wish
-    git switch -c <branch_name> \# create and go to the branch 
+    git branch <branch_name>       \# Create a new branch
+    git branch                     \# Show all local branches
+    git branch -r                  \# Show all remote branches
+    git switch <branch_name>       \# Switch to the specified branch
+    git switch -c <branch_name>    \# Create a new branch and switch to it
     
-11-Git remove a branch
-    
-    git branch -d <branch name> \# if you on that task you cant delete it, you must be switch
-    git branch -D <branch name> \# if you’ve committed or added changes but haven’t merged them into the branch, you need to use -D to delete it.
-    
-    
-12-Git rename branch
+11- Git Branch Deletion
 
-    git branch -m <new branch name> \# First, switch to the branch you want, then run this command.
+    git branch -d <branch_name>    \# Delete a local branch if it has been fully merged
+    git branch -D <branch_name>    \# Force delete a local branch, even if it has unmerged changes
     
+    
+12- Git Branch Rename
+
+    git branch -m <new_branch_name>    # Rename the current branch    
 13-install gitlens on VsCode and see branch graph on thay
 
 14-Git Merge 
