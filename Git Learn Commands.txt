@@ -96,7 +96,6 @@ The commands are organized step by step to help you understand Git and use it co
 
 15- Git Commit Message Convention
 
-```
 feat: add user authentication
 ^--^  ^---------------------^
 |     |
@@ -106,48 +105,48 @@ feat: add user authentication
 
 Common Types:
 
-feat:      Add a new feature or functionality
-fix:       Fix a bug or incorrect behavior
-docs:      Add or update documentation
-style:     Change formatting or code style without changing functionality
-refactor:  Restructure code without changing its behavior
-test:      Add or update tests
-chore:     Perform maintenance tasks that do not affect the application
+    feat:      Add a new feature or functionality
+    fix:       Fix a bug or incorrect behavior
+    docs:      Add or update documentation
+    style:     Change formatting or code style without changing functionality
+    refactor:  Restructure code without changing its behavior
+    test:      Add or update tests
+    chore:     Perform maintenance tasks that do not affect the application
 
 Examples:
 
-feat: add user authentication
-fix: handle invalid email input
-docs: update installation instructions
-style: format code with black
-refactor: simplify user validation
-test: add tests for login function
-chore: update project dependencies
+    feat: add user authentication
+    fix: handle invalid email input
+    docs: update installation instructions
+    style: format code with black
+    refactor: simplify user validation
+    test: add tests for login function
+    chore: update project dependencies
 
 
 Commit Message Rules:
 
-1. Use a type followed by a colon and a space
-   feat: add search feature
+    1. Use a type followed by a colon and a space
+        feat: add search feature
 
-2. Write the description in the imperative present tense
-   feat: add search feature
-   fix: handle empty input
+    2. Write the description in the imperative present tense
+        feat: add search feature
+        fix: handle empty input
 
-3. Keep the subject short and clear
-   feat: add dark mode
+    3. Keep the subject short and clear
+        feat: add dark mode
 
-4. Do not end the subject with a period
-   Good:  fix: handle invalid input
-   Bad:   fix: handle invalid input.
+    4. Do not end the subject with a period
+        Good:  fix: handle invalid input
+        Bad:   fix: handle invalid input.
 
-5. Focus on what the commit does, not how you implemented it
-   Good:  refactor: simplify user validation
-   Bad:   refactor: change three if statements to one
+    5. Focus on what the commit does, not how you implemented it
+        Good:  refactor: simplify user validation
+        Bad:   refactor: change three if statements to one
 
-6. Make each commit focused on one logical change
-   Good:  feat: add password validation
-   Avoid: feat: add validation, update docs, and fix login UI
+    6. Make each commit focused on one logical change
+        Good:  feat: add password validation
+        Avoid: feat: add validation, update docs, and fix login UI
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
