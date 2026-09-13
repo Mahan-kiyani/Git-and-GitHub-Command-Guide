@@ -44,48 +44,54 @@ The commands are organized step by step to help you understand Git and use it co
 7- Git Add and Commit Both
 
     git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
+    git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
+
 
 8- Git Show
 
     git show                           \# Show detailed information about the latest commit, including its changes
     git show <commit_ID>               \# Display detailed information about a specific commit, including its changes, author, and message
+    git show                           \# Show detailed information about the latest commit, including its changes
+    git show <commit_ID>               \# Display detailed information about a specific commit, including its changes, author, and message
     
 9- Git Shortcut Create
 
-    git config --local alias.lgo "log --oneline"             \# Create a local alias for a Git command
-    git config --global alias.am "commit -am"                \# Create a global alias for a Git command
+    git config --local alias.<new command name> "current command"             \# Create a local alias for a Git command
+    git config --global alias.<new command name> "current command"                \# Create a global alias for a Git command
 
     git config --local --get-regexp ^alias\.                 \# Show aliases configured locally
     git config --global --get-regexp ^alias\.                \# Show aliases configured globally
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-10-Git Branch
+10- Git Branch Management
 
-    git branch \# show branchs on your project
-    git branch <branch_name>  \# create a branch
-    git branch -r \# List all remote branches available in the connected repositories(use for git fetch and ...)
-    git switch <branch_name> \# go to the branch you wish
-    git switch -c <branch_name> \# create and go to the branch 
+    git branch <branch_name>       \# Create a new branch
+    git branch                     \# Show all local branches
+    git branch -r                  \# Show all remote branches
+    git switch <branch_name>       \# Switch to the specified branch
+    git switch -c <branch_name>    \# Create a new branch and switch to it
     
-11-Git remove a branch
-    
-    git branch -d <branch name> \# if you on that task you cant delete it, you must be switch
-    git branch -D <branch name> \# if you’ve committed or added changes but haven’t merged them into the branch, you need to use -D to delete it.
-    
-    
-12-Git rename branch
+11- Git Branch Deletion
 
-    git branch -m <new branch name> \# First, switch to the branch you want, then run this command.
+    git branch -d <branch_name>    \# Delete a local branch if it has been fully merged
+    git branch -D <branch_name>    \# Force delete a local branch, even if it has unmerged changes
     
-13-install gitlens on VsCode and see branch graph on thay
-
-14-Git Merge 
     
-    git merge <name of branch> \# First, switch to the branch you want, then run this command. <fast forward>
-    git merge <name of branch> <name_commit> \# First, switch to the branch you want, then run this command. <non-fast forward>
-    git merge --abort \# Abort unfinished merge and restore repository to pre-merge state
+12- Git Branch Rename
 
+    git branch -m <new_branch_name>    \# Rename the current branch    
+
+13- GitLens in VS Code
+
+    Install the GitLens extension in VS Code to view and manage Git branches with a visual branch graph.
+
+14- Git Merge
+
+    git merge <branch_name>            \# Merge the specified branch into the current branch
+    git merge --no-ff <branch_name>    \# Merge the specified branch and always create a merge commit
+    git merge --ff-only <branch_name>  \# Merge only if the merge can be completed as a fast-forward
+    git merge --abort                  \# Abort an unfinished merge and restore the repository to its pre-merge state
 
 15-Commit Message Semantic
     
