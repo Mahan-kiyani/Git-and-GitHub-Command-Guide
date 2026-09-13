@@ -62,7 +62,6 @@ The commands are organized step by step to help you understand Git and use it co
     git config --local --get-regexp ^alias\.                 \# Show aliases configured locally
     git config --global --get-regexp ^alias\.                \# Show aliases configured globally
 
--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 10- Git Branch Management
 
@@ -93,24 +92,64 @@ The commands are organized step by step to help you understand Git and use it co
     git merge --ff-only <branch_name>  \# Merge only if the merge can be completed as a fast-forward
     git merge --abort                  \# Abort an unfinished merge and restore the repository to its pre-merge state
 
-15-Commit Message Semantic
-    
-    feat: add hat wobble
-    ^--^  ^------------^
-    |     |
-    |     +-> Summary in present tense.
-    |
-    +-------> Type: chore, docs, feat, fix, refactor, style, or test.
-    
-    More Examples:
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    feat: (new feature for the user, not a new feature for build script)
-    fix: (bug fix for the user, not a fix to a build script)
-    docs: (changes to the documentation)
-    style: (formatting, missing semi colons, etc; no production code change)
-    refactor: (refactoring production code, eg. renaming a variable)
-    test: (adding missing tests, refactoring tests; no production code change)
-    chore: (updating grunt tasks etc; no production code change)
+15- Git Commit Message Convention
+
+```
+feat: add user authentication
+^--^  ^---------------------^
+|     |
+|     +-> Short description written in the imperative present tense
+|
++-------> Type of change
+
+Common Types:
+
+feat:      Add a new feature or functionality
+fix:       Fix a bug or incorrect behavior
+docs:      Add or update documentation
+style:     Change formatting or code style without changing functionality
+refactor:  Restructure code without changing its behavior
+test:      Add or update tests
+chore:     Perform maintenance tasks that do not affect the application
+
+Examples:
+
+feat: add user authentication
+fix: handle invalid email input
+docs: update installation instructions
+style: format code with black
+refactor: simplify user validation
+test: add tests for login function
+chore: update project dependencies
+
+
+Commit Message Rules:
+
+1. Use a type followed by a colon and a space
+   feat: add search feature
+
+2. Write the description in the imperative present tense
+   feat: add search feature
+   fix: handle empty input
+
+3. Keep the subject short and clear
+   feat: add dark mode
+
+4. Do not end the subject with a period
+   Good:  fix: handle invalid input
+   Bad:   fix: handle invalid input.
+
+5. Focus on what the commit does, not how you implemented it
+   Good:  refactor: simplify user validation
+   Bad:   refactor: change three if statements to one
+
+6. Make each commit focused on one logical change
+   Good:  feat: add password validation
+   Avoid: feat: add validation, update docs, and fix login UI
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 16-Git Comparison
 
