@@ -76,15 +76,18 @@ The commands are organized step by step to help you understand Git and use it co
     
 12- Git Branch Rename
 
-    git branch -m <new_branch_name>    # Rename the current branch    
-13-install gitlens on VsCode and see branch graph on thay
+    git branch -m <new_branch_name>    \# Rename the current branch    
 
-14-Git Merge 
-    
-    git merge <name of branch> \# First, switch to the branch you want, then run this command. <fast forward>
-    git merge <name of branch> <name_commit> \# First, switch to the branch you want, then run this command. <non-fast forward>
-    git merge --abort \# Abort unfinished merge and restore repository to pre-merge state
+13- GitLens in VS Code
 
+    Install the GitLens extension in VS Code to view and manage Git branches with a visual branch graph.
+
+14- Git Merge
+
+    git merge <branch_name>            \# Merge the specified branch into the current branch
+    git merge --no-ff <branch_name>    \# Merge the specified branch and always create a merge commit
+    git merge --ff-only <branch_name>  \# Merge only if the merge can be completed as a fast-forward
+    git merge --abort                  \# Abort an unfinished merge and restore the repository to its pre-merge state
 
 15-Commit Message Semantic
     
