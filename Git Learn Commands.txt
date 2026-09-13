@@ -42,12 +42,11 @@ The commands are organized step by step to help you understand Git and use it co
     git log --author='<UserName>'       \# Show commits made by a specific author
     
 7- Git Add and Commit Both
-7- Git Add and Commit Both
 
     git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
     git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
 
-8- Git Show
+
 8- Git Show
 
     git show                           \# Show detailed information about the latest commit, including its changes
@@ -55,7 +54,6 @@ The commands are organized step by step to help you understand Git and use it co
     git show                           \# Show detailed information about the latest commit, including its changes
     git show <commit_ID>               \# Display detailed information about a specific commit, including its changes, author, and message
     
-9- Git Shortcut Create
 9- Git Shortcut Create
 
     git config --local alias.<new command name> "current command"             \# Create a local alias for a Git command
