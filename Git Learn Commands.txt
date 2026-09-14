@@ -150,14 +150,16 @@ Commit Message Rules:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-16-Git Comparison
+16- Git Diff
 
-    git diff \# comparison work directory with staging area
-    git diff --staged \# comparison stage area with last commits
-    git diff <HEAD> \# Compare the working directory with the latest commit
-    git diff <commit hash code>..<commit hash code> \# comparison one commit to another with hash code (first git log)
-    git diff <commit hash code>..<commit hash code> <file name> \# comparison one file in commit to another with hash code (first git log)
-    git diff <branch name>..<branch name> \# comparison two branches
+
+        git diff                                      \# Compare the working directory with the staging area
+        git diff --staged                             \# Compare the staging area with the latest commit
+        git diff HEAD                                 \# Compare the working directory and staging area with the latest commit
+        git diff <commit_hash>..<commit_hash>         \# Compare the changes between two commits
+        git diff <commit_hash>..<commit_hash> -- <file_name> \# Compare a specific file between two commits
+        git diff <branch_name>..<branch_name>         \# Compare the changes between two branches
+
 
 17-Gitignore 
     
