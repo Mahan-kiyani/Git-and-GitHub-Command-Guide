@@ -164,18 +164,18 @@ Commit Message Rules:
 17- Gitignore
 
     https://www.toptal.com/developers/gitignore/		      \# Generate a .gitignore file based on your programming language, framework, IDE, and other tools
-        Create a .gitignore file in the root directory of your project    \# Tell Git which files and folders should be ignored
-        *.file_extension                                                  \# Ignore all files with a specific extension
-        <file_name>                                                       \# Ignore a specific file
-        <folder_name>/                                                    \# Ignore a specific folder
-        <pattern>                                                         \# Ignore files or folders that match a specific pattern
+    Create a .gitignore file in the root directory of your project    \# Tell Git which files and folders should be ignored
+    *.file_extension                                                  \# Ignore all files with a specific extension
+    <file_name>                                                       \# Ignore a specific file
+    <folder_name>/                                                    \# Ignore a specific folder
+    <pattern>                                                         \# Ignore files or folders that match a specific pattern
 
 Example:
 
-        *.py                                                              \# Ignore all Python files
-        .env                                                              \# Ignore the environment variables file
-        __pycache__/                                                      \# Ignore the Python cache folder
-        <folder_name>/                                                    \# Ignore a specific folder
+    *.py                                                              \# Ignore all Python files
+    .env                                                              \# Ignore the environment variables file
+    __pycache__/                                                      \# Ignore the Python cache folder
+    <folder_name>/                                                    \# Ignore a specific folder
 
 
 
