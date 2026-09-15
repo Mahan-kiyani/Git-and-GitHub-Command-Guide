@@ -179,15 +179,16 @@ Example:
 
 
 
-18-Git checkout
+18- Git Checkout
 
-    git checkout <hash name> \# Switch to specific commit
-    git switch <master or main>
-    git log --oneline --all \# show all commits 
-    git checkout <hash name> <file name>
-    git checkout HEAD~3 \# Checkout commit three steps before HEAD 
+    git checkout <commit_hash>                           \# Switch to a specific commit
+    git checkout <commit_hash> -- <file_name>            \# Restore a specific file from a specific commit
+    git switch <branch_name>                             \# Switch to the specified branch
+    git log --oneline --all                              \# Show all commits from all branches
+    git checkout HEAD~3                                  \# Switch to the commit three steps before HEAD
 
-    ** we can use <git checkout Head> Revert working directory to clean state (discard uncommitted changes)
+**Important:** `git checkout` can be used for both commits and branches, but for modern Git, `git switch` is recommended for switching branches and `git restore` for restoring files or discarding changes.
+
 
 19-Git Restore
 
