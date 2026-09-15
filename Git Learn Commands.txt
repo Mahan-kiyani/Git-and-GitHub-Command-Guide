@@ -153,18 +153,31 @@ Commit Message Rules:
 16- Git Diff
 
 
-        git diff                                      \# Compare the working directory with the staging area
-        git diff --staged                             \# Compare the staging area with the latest commit
-        git diff HEAD                                 \# Compare the working directory and staging area with the latest commit
-        git diff <commit_hash>..<commit_hash>         \# Compare the changes between two commits
-        git diff <commit_hash>..<commit_hash> -- <file_name> \# Compare a specific file between two commits
-        git diff <branch_name>..<branch_name>         \# Compare the changes between two branches
+    git diff                                      \# Compare the working directory with the staging area
+    git diff --staged                             \# Compare the staging area with the latest commit
+    git diff HEAD                                 \# Compare the working directory and staging area with the latest commit
+    git diff <commit_hash>..<commit_hash>         \# Compare the changes between two commits
+    git diff <commit_hash>..<commit_hash> -- <file_name> \# Compare a specific file between two commits
+    git diff <branch_name>..<branch_name>         \# Compare the changes between two branches
 
 
-17-Gitignore 
-    
-    create gitignore file '.gitignore' in the path \# https://www.toptal.com/developers/gitignore
-    *.file_name \# all files with this suffix is ignore
+17- Gitignore
+
+    https://www.toptal.com/developers/gitignore/		      \# Generate a .gitignore file based on your programming language, framework, IDE, and other tools
+        Create a .gitignore file in the root directory of your project    \# Tell Git which files and folders should be ignored
+        *.file_extension                                                  \# Ignore all files with a specific extension
+        <file_name>                                                       \# Ignore a specific file
+        <folder_name>/                                                    \# Ignore a specific folder
+        <pattern>                                                         \# Ignore files or folders that match a specific pattern
+
+Example:
+
+        *.py                                                              \# Ignore all Python files
+        .env                                                              \# Ignore the environment variables file
+        __pycache__/                                                      \# Ignore the Python cache folder
+        <folder_name>/                                                    \# Ignore a specific folder
+
+
 
 18-Git checkout
 
