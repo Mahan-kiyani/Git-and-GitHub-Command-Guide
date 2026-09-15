@@ -186,6 +186,7 @@ Example:
     git switch <branch_name>                             \# Switch to the specified branch
     git log --oneline --all                              \# Show all commits from all branches
     git checkout HEAD~3                                  \# Switch to the commit three steps before HEAD
+    git checkout HEAD .    \# Restore all files in the working directory to their state in the latest commit
 
 **Important:** `git checkout` can be used for both commits and branches, but for modern Git, `git switch` is recommended for switching branches and `git restore` for restoring files or discarding changes.
 
