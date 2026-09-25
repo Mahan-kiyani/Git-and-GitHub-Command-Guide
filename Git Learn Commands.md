@@ -191,11 +191,13 @@ Example:
 **Important:** `git checkout` can be used for both commits and branches, but for modern Git, `git switch` is recommended for switching branches and `git restore` for restoring files or discarding changes.
 
 
-19-Git Restore
+19- Git Restore
 
-    git restore <file name> \# Revert working directory to clean state (discard uncommitted changes)
-    git restore --staged <file name> \# Remove files from staging area
-    git restore --source <hash name> <file name> \# Restore file(s) from a specific commit as source
+    git restore <file_name>                         \# Discard uncommitted changes in the working directory
+    git restore --staged <file_name>                \# Remove a file from the staging area while keeping its changes in the working directory
+    git restore --source <commit_hash> <file_name>  \# Restore a file from a specific commit
+
+* Difference from git checkout: git restore is specifically designed for restoring files and managing working-directory/staging changes, while git checkout has broader uses, including switching branches and commits.*
 
 20-Git clean
 
