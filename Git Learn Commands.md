@@ -196,7 +196,10 @@ Example:
     git restore <file_name>                         \# Discard uncommitted changes in the working directory
     git restore --staged <file_name>                \# Remove a file from the staging area while keeping its changes in the working directory
     git restore --source <commit_hash> <file_name>  \# Restore a file from a specific commit
+    git restore .                    \# Discard uncommitted changes in all files in the working directory
+    git restore --staged .           \# Remove all files from the staging area while keeping their changes in the working directory
 
+    
 * Difference from git checkout: git restore is specifically designed for restoring files and managing working-directory/staging changes, while git checkout has broader uses, including switching branches and commits.*
 
 20-Git clean
