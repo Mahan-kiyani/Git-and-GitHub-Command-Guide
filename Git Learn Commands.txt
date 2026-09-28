@@ -219,7 +219,7 @@ Example:
 
 23-Git status
 
-    git status -h
+    git status -h \# Status Help
     git status -s \# Show concise summary of file changes and repository status
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------

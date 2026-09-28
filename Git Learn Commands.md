@@ -199,7 +199,7 @@ Example:
     git restore .                    \# Discard uncommitted changes in all files in the working directory
     git restore --staged .           \# Remove all files from the staging area while keeping their changes in the working directory
 
-    
+
 * Difference from git checkout: git restore is specifically designed for restoring files and managing working-directory/staging changes, while git checkout has broader uses, including switching branches and commits.*
 
 20-Git clean
@@ -219,7 +219,7 @@ Example:
 
 23-Git status
 
-    git status -h
+    git status -h \# Status Help
     git status -s \# Show concise summary of file changes and repository status
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
