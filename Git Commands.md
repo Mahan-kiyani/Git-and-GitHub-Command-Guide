@@ -120,12 +120,6 @@ git commit -am "<your_message>"
 
 > # Stage and commit all modified and deleted tracked files
 
-```bash
-git commit -am "<your_message>"
-```
-
-> # Stage and commit all modified and deleted tracked files
-
 ---
 
 ## 8. Git Show

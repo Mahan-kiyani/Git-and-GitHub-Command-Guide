@@ -44,7 +44,6 @@ The commands are organized step by step to help you understand Git and use it co
 7- Git Add and Commit Both
 
     git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
-    git commit -am "<your_message>"    \# Stage and commit all modified and deleted tracked files
 
 
 8- Git Show
