@@ -481,31 +481,31 @@ git pull <remote_name> <branch_name>
 git fetch
 ```
 
-> \# Download updates from all configured remote repositories without changing your working directory
+> # Download updates from all configured remote repositories without changing your working directory
 
 ```bash
 git fetch <remote_name>
 ```
 
-> \# Download updates from a specific remote repository
+> # Download updates from a specific remote repository
 
 ```bash
 git fetch <remote_name> <branch_name>
 ```
 
-> \# Download updates from a specific remote branch
+> # Download updates from a specific remote branch
 
 ```bash
 git fetch --all
 ```
 
-> \# Download updates from all configured remote repositories
+> # Download updates from all configured remote repositories
 
 ```bash
 git fetch --prune
 ```
 
-> \# Remove remote-tracking references that no longer exist on the remote
+> # Remove remote-tracking references that no longer exist on the remote
 
 ```text
 { git pull == git fetch && git merge }
