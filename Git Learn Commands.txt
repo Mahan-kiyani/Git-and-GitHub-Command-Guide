@@ -246,7 +246,12 @@ Example:
 
 28-Git Fetch
 
-    git fetch <remote> <branch> \# Download updates from a remote branch to your local repository without merging them, allowing you to review changes before integrating
+    git fetch                                      \# Download updates from all configured remote repositories without changing your working directory
+    git fetch <remote_name>                        \# Download updates from a specific remote repository
+    git fetch <remote_name> <branch_name>          \# Download updates from a specific remote branch
+    git fetch --all                                \# Download updates from all configured remote repositories
+    git fetch --prune                              \# Remove remote-tracking references that no longer exist on the remote
+
 
     { git pull == git fetch && git merge }
 
