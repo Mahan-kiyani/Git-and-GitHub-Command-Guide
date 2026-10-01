@@ -468,7 +468,7 @@ git clone <repository_url ---> https or ssh>
 ## 27. Git Pull
 
 ```bash
-git pull
+git pull <remote_name> <branch_name>
 ```
 
 > # Fetch changes from the remote repository and merge them into the current branch

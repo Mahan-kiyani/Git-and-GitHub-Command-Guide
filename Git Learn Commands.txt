@@ -242,7 +242,7 @@ Example:
 
 27-Git Pull
 
-    git pull \# Fetch changes from the remote repository and merge them into the current branch
+    git pull <remote_name> <branch_name> \# Fetch changes from the remote repository and merge them into the current branch
 
 28-Git Fetch
 
