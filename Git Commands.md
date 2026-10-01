@@ -475,13 +475,37 @@ git pull <remote_name> <branch_name>
 
 ---
 
-## 28. Git Fetch
+## 28- Git Fetch
 
 ```bash
-git fetch <remote> <branch>
+git fetch
 ```
 
-> # Download updates from a remote branch to your local repository without merging them, allowing you to review changes before integrating
+> \# Download updates from all configured remote repositories without changing your working directory
+
+```bash
+git fetch <remote_name>
+```
+
+> \# Download updates from a specific remote repository
+
+```bash
+git fetch <remote_name> <branch_name>
+```
+
+> \# Download updates from a specific remote branch
+
+```bash
+git fetch --all
+```
+
+> \# Download updates from all configured remote repositories
+
+```bash
+git fetch --prune
+```
+
+> \# Remove remote-tracking references that no longer exist on the remote
 
 ```text
 { git pull == git fetch && git merge }
