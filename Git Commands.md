@@ -475,7 +475,7 @@ git pull <remote_name> <branch_name>
 
 ---
 
-## 28- Git Fetch
+## 28. Git Fetch
 
 ```bash
 git fetch
