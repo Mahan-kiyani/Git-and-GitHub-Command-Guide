@@ -1,6 +1,3 @@
-![git](https://brandlogos.net/wp-content/uploads/2021/11/git-logo.png)
-
-
 # Git Learn Commands
 
 > A practical guide to the most important Git commands, with simple explanations and real-world examples.
@@ -513,3 +510,5 @@ git fetch --prune
 ```text
 { git pull == git fetch && git merge }
 ```
+
+![git](https://brandlogos.net/wp-content/uploads/2021/11/git-logo.png)
