@@ -1,3 +1,6 @@
+![git](https://brandlogos.net/wp-content/uploads/2021/11/git-logo.png)
+
+
 # Git Learn Commands
 
 > A practical guide to the most important Git commands, with simple explanations and real-world examples.
@@ -45,7 +48,7 @@
 git init
 ```
 
-> # Initialize a new Git repository in the current directory
+> \# Initialize a new Git repository in the current directory
 
 ---
 
@@ -55,7 +58,7 @@ git init
 git status
 ```
 
-> # Show the current state of the working directory and staging area
+> \# Show the current state of the working directory and staging area
 
 ---
 
@@ -74,7 +77,7 @@ git status
 git rm --cached <file_name>
 ```
 
-> # Stop tracking a file in Git without deleting it from the local directory
+> \# Stop tracking a file in Git without deleting it from the local directory
 
 ---
 
@@ -86,13 +89,13 @@ git rm --cached <file_name>
 git commit -m "<your_message>"
 ```
 
-> # Create a new commit with a message
+> \# Create a new commit with a message
 
 ```bash
 git push origin main
 ```
 
-> # Push local commits to the main branch on the remote repository
+> \# Push local commits to the main branch on the remote repository
 
 ---
 
@@ -118,7 +121,7 @@ git push origin main
 git commit -am "<your_message>"
 ```
 
-> # Stage and commit all modified and deleted tracked files
+> \# Stage and commit all modified and deleted tracked files
 
 ---
 
@@ -185,7 +188,7 @@ git commit -am "<your_message>"
 git branch -m <new_branch_name>
 ```
 
-> # Rename the current branch
+> \# Rename the current branch
 
 ---
 
@@ -313,11 +316,11 @@ Avoid: feat: add validation, update docs, and fix login UI
 
 [Gitignore Generator](https://www.toptal.com/developers/gitignore/)
 
-> # Generate a .gitignore file based on your programming language, framework, IDE, and other tools
+> \# Generate a .gitignore file based on your programming language, framework, IDE, and other tools
 
 Create a `.gitignore` file in the root directory of your project.
 
-> # Tell Git which files and folders should be ignored
+> \# Tell Git which files and folders should be ignored
 
 ### Patterns
 
@@ -362,13 +365,13 @@ Create a `.gitignore` file in the root directory of your project.
 git restore <file_name>
 ```
 
-> # Discard uncommitted changes in the working directory
+> \# Discard uncommitted changes in the working directory
 
 ```bash
 git restore .
 ```
 
-> # Discard uncommitted changes in all files in the working directory
+> \# Discard uncommitted changes in all files in the working directory
 
 ### Restore Staging Area
 
@@ -376,13 +379,13 @@ git restore .
 git restore --staged <file_name>
 ```
 
-> # Remove a file from the staging area while keeping its changes in the working directory
+> \# Remove a file from the staging area while keeping its changes in the working directory
 
 ```bash
 git restore --staged .
 ```
 
-> # Remove all files from the staging area while keeping their changes in the working directory
+> \# Remove all files from the staging area while keeping their changes in the working directory
 
 ### Restore from a Specific Commit
 
@@ -390,7 +393,7 @@ git restore --staged .
 git restore --source <commit_hash> <file_name>
 ```
 
-> # Restore a file from a specific commit
+> \# Restore a file from a specific commit
 
 > *Difference from git checkout: git restore is specifically designed for restoring files and managing working-directory/staging changes, while git checkout has broader uses, including switching branches and commits.*
 
@@ -421,7 +424,7 @@ git restore --source <commit_hash> <file_name>
 git revert <hash ID>
 ```
 
-> # Revert specific commit by creating a new inverse commit
+> \# Revert specific commit by creating a new inverse commit
 
 ---
 
@@ -440,7 +443,7 @@ git revert <hash ID>
 git clone <repository_url ---> https or ssh>
 ```
 
-> # Create a local copy of a remote repository, so you can work on it
+> \# Create a local copy of a remote repository, so you can work on it
 
 ---
 
@@ -471,7 +474,7 @@ git clone <repository_url ---> https or ssh>
 git pull <remote_name> <branch_name>
 ```
 
-> # Fetch changes from the remote repository and merge them into the current branch
+> \# Fetch changes from the remote repository and merge them into the current branch
 
 ---
 
@@ -481,31 +484,31 @@ git pull <remote_name> <branch_name>
 git fetch
 ```
 
-> # Download updates from all configured remote repositories without changing your working directory
+> \# Download updates from all configured remote repositories without changing your working directory
 
 ```bash
 git fetch <remote_name>
 ```
 
-> # Download updates from a specific remote repository
+> \# Download updates from a specific remote repository
 
 ```bash
 git fetch <remote_name> <branch_name>
 ```
 
-> # Download updates from a specific remote branch
+> \# Download updates from a specific remote branch
 
 ```bash
 git fetch --all
 ```
 
-> # Download updates from all configured remote repositories
+> \# Download updates from all configured remote repositories
 
 ```bash
 git fetch --prune
 ```
 
-> # Remove remote-tracking references that no longer exist on the remote
+> \# Remove remote-tracking references that no longer exist on the remote
 
 ```text
 { git pull == git fetch && git merge }
