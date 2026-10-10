@@ -255,7 +255,11 @@ Example:
 
     { git pull == git fetch && git merge }
 
-    
+29-Git config
+
+     git config user.name   \# Show the configured username for the current repository or global configuration
+
+     git config user.email   \# Show the configured email address for the current repository or global configuration
 
 
 

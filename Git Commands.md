@@ -36,6 +36,7 @@
 * [26. Git Push](#26-git-push)
 * [27. Git Pull](#27-git-pull)
 * [28. Git Fetch](#28-git-fetch)
+* [29. git config](#29-git-config)
 
 ---
 
@@ -511,4 +512,22 @@ git fetch --prune
 { git pull == git fetch && git merge }
 ```
 
+
+## 29. Git config
+
+```bash
+git config user.name
+```
+> \# Show the configured username for the current repository or global configuration
+
+```bash
+git config user.email
+```
+> \# Show the configured email address for the current repository or global configuration
+
+
+
+
+
 ![git](https://brandlogos.net/wp-content/uploads/2021/11/git-logo.png)
+
