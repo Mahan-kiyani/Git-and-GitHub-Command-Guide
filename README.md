@@ -1,5 +1,5 @@
 # Git Learn Commands
-
+![](https://img.shields.io/github/commit-activity/m/Mahan-kiyani/Git-and-GitHub-Command-Guide)
 A practical and easy-to-follow reference for learning and using **Git & GitHub**.
 
 This repository brings together the most useful Git commands, from the basics of initializing a repository and managing branches to working with commits, remotes, and GitHub.
