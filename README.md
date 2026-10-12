@@ -1,3 +1,5 @@
+[![Readme Card](https://github-stats-extended.vercel.app/api/pin/?username=mahan-kiyani&repo=Git-and-GitHub-Command-Guide&theme=monokai
+)
 # Git Learn Commands
 
 A practical and easy-to-follow reference for learning and using **Git & GitHub**.
