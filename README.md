@@ -595,6 +595,31 @@ git stash clear
 ```
 > \# Delete all stashes
 
+```bash
+git stash show
+```
+> \# Show a summary of the latest stash
+
+```bash
+git stash show -p
+```
+> \# Show the changes stored in the latest stash
+
+```bash
+git stash apply
+```
+> \# Apply the latest stash without removing it from the stash list
+
+```bash
+git stash apply stash@{<index>}
+```
+> \# Apply a specific stash without removing it
+
+```bash
+git stash drop stash@{<index>}
+```
+> \# Delete a specific stash
+
 
 
 

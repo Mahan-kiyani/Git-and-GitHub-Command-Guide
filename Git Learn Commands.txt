@@ -264,10 +264,16 @@ Example:
     git config user.email   \# Show the configured email address for the current repository or global configuration
 
 30-Git stash
-    git stash push -m "<message>"    \# Save uncommitted changes in a stash with a descriptive message (git stash save 'commit message')
-    git stash list                   \# List all saved stashes
-    git stash pop                    \# Apply the latest stash and remove it from the stash list if successful
-    git stash clear                  \# Delete all stashes
+    git stash                     \# Temporarily save uncommitted tracked changes and restore a clean working directory
+    git stash -u                  \# Stash tracked and untracked files
+    git stash list                \# List all saved stashes
+    git stash show                \# Show a summary of the latest stash
+    git stash show -p             \# Show the changes stored in the latest stash
+    git stash apply                        \# Apply the latest stash without removing it from the stash list
+    git stash pop                          \# Apply the latest stash and remove it from the stash list if successful
+    git stash apply stash@{<index>}        \# Apply a specific stash without removing it
+    git stash drop stash@{<index>}         \# Delete a specific stash
+    git stash clear                        \# Delete all stashes
 
 
 
