@@ -27,6 +27,9 @@ The commands are organized step by step to help you understand Git and use it co
 5- Git Send to Repository (The git push command is fully explained in tip 26)
 
     git commit -m "<your_message>"    \# Create a new commit with a message
+    git commit --amend                  \# Modify the latest commit includ ingits message or staged changes
+    git commit --amend -m "<message>"   \# Change the latest commit message
+    git commit --amend --no-edit        \# Add staged changes to the latest commit without changing its message 
     git push origin main              \# Push local commits to the main branch on the remote repository    
 
 6- Git Log

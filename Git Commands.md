@@ -90,6 +90,21 @@ git commit -m "<your_message>"
 > \# Create a new commit with a message
 
 ```bash
+git commit --amend                  
+```
+> \# Modify the latest commit, including its message or staged changes
+
+```bash
+git commit --amend -m "<message>"   
+```
+> \# Change the latest commit message
+
+```bash
+git commit --amend --no-edit       
+```
+> \# Add staged changes to the latest commit without changing its message
+
+```bash
 git push origin main
 ```
 
