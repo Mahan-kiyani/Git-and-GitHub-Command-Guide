@@ -70,6 +70,7 @@ The goal of this repository is to build a **practical Git reference** that is ea
 * [27. Git Pull](#27-git-pull)
 * [28. Git Fetch](#28-git-fetch)
 * [29. git config](#29-git-config)
+* [30. Git Stash](#30-git-stash)
 
 ---
 
@@ -571,6 +572,28 @@ git config user.name
 git config user.email
 ```
 > \# Show the configured email address for the current repository or global configuration
+
+## 30. Git Stash
+
+```bash
+git stash push -m "<message>"
+```
+> \# Save uncommitted changes in a stash with a descriptive message (git stash save 'commit message')
+
+```bash
+git stash list
+```
+> \# List all saved stashes
+
+```bash
+git stash pop
+```
+> \# Apply the latest stash and remove it from the stash list if successful
+
+```bash
+git stash clear
+```
+> \# Delete all stashes
 
 
 
