@@ -263,8 +263,11 @@ Example:
     git config user.name   \# Show the configured username for the current repository or global configuration
     git config user.email   \# Show the configured email address for the current repository or global configuration
 
-
-
+30-Git stash
+    git stash push -m "<message>"    \# Save uncommitted changes in a stash with a descriptive message (git stash save 'commit message')
+    git stash list                   \# List all saved stashes
+    git stash pop                    \# Apply the latest stash and remove it from the stash list if successful
+    git stash clear                  \# Delete all stashes
 
 
 
